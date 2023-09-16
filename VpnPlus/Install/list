@@ -27,15 +27,15 @@ grep -v "^PasswordAuthentication" /etc/ssh/sshd_config >/tmp/passlogin && mv /tm
 echo "PasswordAuthentication yes" >>/etc/ssh/sshd_config
 service ssh restart
 
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/addhost -O /bin/addhost > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/addhost -O /bin/addhost > /dev/null 2>&1
 chmod +x /bin/addhost
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/alterarlimite -O /bin/alterarlimite > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/alterarlimite -O /bin/alterarlimite > /dev/null 2>&1
 chmod +x /bin/alterarlimite
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/alterarsenha -O /bin/alterarsenha > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/alterarsenha -O /bin/alterarsenha > /dev/null 2>&1
 chmod +x /bin/alterarsenha
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/attscript -O /bin/attscript > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/attscript -O /bin/attscript > /dev/null 2>&1
 chmod +x /bin/attscript
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/badvpn -O /bin/badvpn > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/badvpn -O /bin/badvpn > /dev/null 2>&1
 chmod +x /bin/badvpn
 wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/banner -O /bin/banner > /dev/null 2>&1
 chmod +x /bin/banner
