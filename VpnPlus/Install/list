@@ -27,15 +27,15 @@ grep -v "^PasswordAuthentication" /etc/ssh/sshd_config >/tmp/passlogin && mv /tm
 echo "PasswordAuthentication yes" >>/etc/ssh/sshd_config
 service ssh restart
 
-wget https://www.dropbox.com/s/n3725c8cctq112s/addhost -O /bin/addhost > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/addhost -O /bin/addhost > /dev/null 2>&1
 chmod +x /bin/addhost
-wget https://www.dropbox.com/s/j9e62jw0l3a69y0/alterarlimite -O /bin/alterarlimite > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/alterarlimite -O /bin/alterarlimite > /dev/null 2>&1
 chmod +x /bin/alterarlimite
-wget https://www.dropbox.com/s/pisguwmklbabsum/alterarsenha -O /bin/alterarsenha > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/alterarsenha -O /bin/alterarsenha > /dev/null 2>&1
 chmod +x /bin/alterarsenha
-wget https://www.dropbox.com/s/kd09dpbavlc1iv4/attscript -O /bin/attscript > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/attscript -O /bin/attscript > /dev/null 2>&1
 chmod +x /bin/attscript
-wget https://www.dropbox.com/s/kteyzf5daxnyhjw/badvpn -O /bin/badvpn > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/badvpn -O /bin/badvpn > /dev/null 2>&1
 chmod +x /bin/badvpn
 wget https://www.dropbox.com/s/u1fworc38rwqrg8/banner -O /bin/banner > /dev/null 2>&1
 chmod +x /bin/banner
