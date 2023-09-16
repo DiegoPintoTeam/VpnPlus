@@ -134,7 +134,7 @@ rm Plus* > /dev/null 2>&1
 rm list* > /dev/null 2>&1
 rm versao* > /dev/null 2>&1
 echo "/bin/menu" > /bin/h && chmod +x /bin/h > /dev/null 2>&1
-wget https://www.dropbox.com/s/7qt0d3i6ldof9i9/versao > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/versao > /dev/null 2>&1
 clear
 echo ""
 cd $HOME
