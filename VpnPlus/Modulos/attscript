@@ -62,7 +62,7 @@ fun_atts () {
 
   [[ -e /tmp/att ]] && rm /tmp/att
 
-	wget -c -P /home https://www.dropbox.com/s/7qt0d3i6ldof9i9/versao
+	wget -c -P /home https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/versao
 
 	[[ -f "/home/versao" ]] && mv /home/versao /tmp/att
 
