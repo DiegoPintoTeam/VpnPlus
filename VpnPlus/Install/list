@@ -37,29 +37,29 @@ wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modul
 chmod +x /bin/attscript
 wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/badvpn -O /bin/badvpn > /dev/null 2>&1
 chmod +x /bin/badvpn
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/banner -O /bin/banner > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/banner -O /bin/banner > /dev/null 2>&1
 chmod +x /bin/banner
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/conexao -O /bin/conexao > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/conexao -O /bin/conexao > /dev/null 2>&1
 chmod +x /bin/conexao
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/bloquear -O /bin/bloquear > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/bloquear -O /bin/bloquear > /dev/null 2>&1
 chmod +x /bin/bloquear
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/criarusuario -O /bin/criarusuario > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/criarusuario -O /bin/criarusuario > /dev/null 2>&1
 chmod +x /bin/criarusuario
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/delhost -O /bin/delhost > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/delhost -O /bin/delhost > /dev/null 2>&1
 chmod +x /bin/delhost
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/delscript -O /bin/delscript > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/delscript -O /bin/delscript > /dev/null 2>&1
 chmod +x /bin/delscript
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/detalhes -O /bin/detalhes > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/detalhes -O /bin/detalhes > /dev/null 2>&1
 chmod +x /bin/detalhes
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/droplimiter -O /bin/droplimiter > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/droplimiter -O /bin/droplimiter > /dev/null 2>&1
 chmod +x /bin/droplimiter
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/expcleaner -O /bin/expcleaner > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/expcleaner -O /bin/expcleaner > /dev/null 2>&1
 chmod +x /bin/expcleaner
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/infousers -O /bin/infousers > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/infousers -O /bin/infousers > /dev/null 2>&1
 chmod +x /bin/infousers
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/limiter -O /bin/limiter > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/limiter -O /bin/limiter > /dev/null 2>&1
 chmod +x /bin/limiter
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/menu -O /bin/menu > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/menu -O /bin/menu > /dev/null 2>&1
 chmod +x /bin/menu
 wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/mudardata -O /bin/mudardata > /dev/null 2>&1
 chmod +x /bin/mudardata
