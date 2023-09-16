@@ -37,57 +37,57 @@ wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/attscri
 chmod +x /bin/attscript
 wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/badvpn -O /bin/badvpn > /dev/null 2>&1
 chmod +x /bin/badvpn
-wget https://www.dropbox.com/s/u1fworc38rwqrg8/banner -O /bin/banner > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/banner -O /bin/banner > /dev/null 2>&1
 chmod +x /bin/banner
-wget https://www.dropbox.com/s/696uwql46s0dd2e/conexao -O /bin/conexao > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/conexao -O /bin/conexao > /dev/null 2>&1
 chmod +x /bin/conexao
-wget https://www.dropbox.com/s/6rgphynbz6o22rn/bloquear -O /bin/bloquear > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/bloquear -O /bin/bloquear > /dev/null 2>&1
 chmod +x /bin/bloquear
-wget https://www.dropbox.com/s/f6g1iwh1cmsn40c/criarusuario -O /bin/criarusuario > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/criarusuario -O /bin/criarusuario > /dev/null 2>&1
 chmod +x /bin/criarusuario
-wget https://www.dropbox.com/s/dy47nok6uy5jimq/delhost -O /bin/delhost > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/delhost -O /bin/delhost > /dev/null 2>&1
 chmod +x /bin/delhost
-wget https://www.dropbox.com/s/kxg0wxd5k25px61/delscript -O /bin/delscript > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/delscript -O /bin/delscript > /dev/null 2>&1
 chmod +x /bin/delscript
-wget https://www.dropbox.com/s/pkyl5c48a5gvhd9/detalhes -O /bin/detalhes > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/detalhes -O /bin/detalhes > /dev/null 2>&1
 chmod +x /bin/detalhes
-wget https://www.dropbox.com/s/12vsw9wrcxcdrdo/droplimiter -O /bin/droplimiter > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/droplimiter -O /bin/droplimiter > /dev/null 2>&1
 chmod +x /bin/droplimiter
-wget https://www.dropbox.com/s/u17b8d1hdosmnt6/expcleaner -O /bin/expcleaner > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/expcleaner -O /bin/expcleaner > /dev/null 2>&1
 chmod +x /bin/expcleaner
-wget https://www.dropbox.com/s/yww6dmqcpyygivh/infousers -O /bin/infousers > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/infousers -O /bin/infousers > /dev/null 2>&1
 chmod +x /bin/infousers
-wget https://www.dropbox.com/s/f4znm7fh88me9zm/limiter -O /bin/limiter > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/limiter -O /bin/limiter > /dev/null 2>&1
 chmod +x /bin/limiter
-wget https://www.dropbox.com/s/jbhrdjjp14h6apv/menu -O /bin/menu > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/menu -O /bin/menu > /dev/null 2>&1
 chmod +x /bin/menu
-wget https://www.dropbox.com/s/l2zi1npzzl0p5h4/mudardata -O /bin/mudardata > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/mudardata -O /bin/mudardata > /dev/null 2>&1
 chmod +x /bin/mudardata
-wget https://www.dropbox.com/s/5sjl6y6inoc3g6g/otimizar -O /bin/otimizar > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/otimizar -O /bin/otimizar > /dev/null 2>&1
 chmod +x /bin/otimizar
-wget https://www.dropbox.com/s/arzlyginkaf5ueh/reiniciarservicos -O /bin/reiniciarservicos > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/reiniciarservicos -O /bin/reiniciarservicos > /dev/null 2>&1
 chmod +x /bin/reiniciarservicos
-wget https://www.dropbox.com/s/7g4ahjy4no825dy/reiniciarsistema -O /bin/reiniciarsistema > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/reiniciarsistema -O /bin/reiniciarsistema > /dev/null 2>&1
 chmod +x /bin/reiniciarsistema
-wget https://www.dropbox.com/s/y8p8147inlbf51n/remover -O /bin/remover > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/remover -O /bin/remover > /dev/null 2>&1
 chmod +x /bin/remover
-wget https://www.dropbox.com/s/iarqs4a3vog9zjc/senharoot -O /bin/senharoot > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/senharoot -O /bin/senharoot > /dev/null 2>&1
 chmod +x /bin/senharoot
-wget https://www.dropbox.com/s/vl4egza49dyds4o/speedtest -O /bin/speedtest > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/speedtest -O /bin/speedtest > /dev/null 2>&1
 chmod +x /bin/speedtest
-wget https://www.dropbox.com/s/vqfyqgpgpspairh/sshmonitor -O /bin/sshmonitor > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/sshmonitor -O /bin/sshmonitor > /dev/null 2>&1
 chmod +x /bin/sshmonitor
-wget https://www.dropbox.com/s/qex4tqs86198qmu/uexpired -O /bin/uexpired > /dev/null 2>&1
+wget hhttps://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/uexpired -O /bin/uexpired > /dev/null 2>&1
 chmod +x /bin/uexpired
-wget https://www.dropbox.com/s/4ee9v89hzbtm7pi/userbackup -O /bin/userbackup > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/userbackup -O /bin/userbackup > /dev/null 2>&1
 chmod +x /bin/userbackup
-wget https://www.dropbox.com/s/06ofy3ioity10pi/verifatt -O /bin/verifatt > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/verifatt -O /bin/verifatt > /dev/null 2>&1
 chmod +x /bin/verifatt
-wget https://www.dropbox.com/s/p0j4zhbih0v5bpb/cabecalho -O /etc/VPNPlus/cabecalho > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/cabecalho -O /etc/VPNPlus/cabecalho > /dev/null 2>&1
 chmod +x /etc/VPNPlus/cabecalho
-wget https://www.dropbox.com/s/jrgp87gbtyvvla9/proxy.py -O /etc/VPNPlus/proxy.py > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/proxy.py -O /etc/VPNPlus/proxy.py > /dev/null 2>&1
 chmod +x /etc/VPNPlus/proxy.py
-wget https://www.dropbox.com/s/cb0w5xh3k7udem2/open.py -O /etc/VPNPlus/open.py > /dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/open.py -O /etc/VPNPlus/open.py > /dev/null 2>&1
 chmod +x /etc/VPNPlus/open.py
 
 _dir1='/bin'
@@ -131,7 +131,7 @@ crontab -r >/dev/null 2>&1
 	echo "0 */6 * * * /bin/uexpired"
 ) | crontab -
 echo "$_lvk" | sed -n '1 p' | cut -d' ' -f2 >/bin/versao && cat /bin/versao >/home/vpnplus
-wget https://www.dropbox.com/s/hjkrvhpqgz377p7/jq-linux64 >/dev/null 2>&1
+wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Install/jq-linux64 >/dev/null 2>&1
 chmod +x jq-linux64 && mv jq-linux64 $(which jq)
 service cron restart >/dev/null 2>&1
 service ssh restart >/dev/null 2>&1
