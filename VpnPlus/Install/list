@@ -61,33 +61,33 @@ wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modul
 chmod +x /bin/limiter
 wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/menu -O /bin/menu > /dev/null 2>&1
 chmod +x /bin/menu
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/mudardata -O /bin/mudardata > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/mudardata -O /bin/mudardata > /dev/null 2>&1
 chmod +x /bin/mudardata
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/otimizar -O /bin/otimizar > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/otimizar -O /bin/otimizar > /dev/null 2>&1
 chmod +x /bin/otimizar
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/reiniciarservicos -O /bin/reiniciarservicos > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/reiniciarservicos -O /bin/reiniciarservicos > /dev/null 2>&1
 chmod +x /bin/reiniciarservicos
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/reiniciarsistema -O /bin/reiniciarsistema > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/reiniciarsistema -O /bin/reiniciarsistema > /dev/null 2>&1
 chmod +x /bin/reiniciarsistema
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/remover -O /bin/remover > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/remover -O /bin/remover > /dev/null 2>&1
 chmod +x /bin/remover
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/senharoot -O /bin/senharoot > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/senharoot -O /bin/senharoot > /dev/null 2>&1
 chmod +x /bin/senharoot
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/speedtest -O /bin/speedtest > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/speedtest -O /bin/speedtest > /dev/null 2>&1
 chmod +x /bin/speedtest
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/sshmonitor -O /bin/sshmonitor > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/sshmonitor -O /bin/sshmonitor > /dev/null 2>&1
 chmod +x /bin/sshmonitor
-wget hhttps://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/uexpired -O /bin/uexpired > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/uexpired -O /bin/uexpired > /dev/null 2>&1
 chmod +x /bin/uexpired
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/userbackup -O /bin/userbackup > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/userbackup -O /bin/userbackup > /dev/null 2>&1
 chmod +x /bin/userbackup
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/verifatt -O /bin/verifatt > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/verifatt -O /bin/verifatt > /dev/null 2>&1
 chmod +x /bin/verifatt
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/cabecalho -O /etc/VPNPlus/cabecalho > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/cabecalho -O /etc/VPNPlus/cabecalho > /dev/null 2>&1
 chmod +x /etc/VPNPlus/cabecalho
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/proxy.py -O /etc/VPNPlus/proxy.py > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/proxy.py -O /etc/VPNPlus/proxy.py > /dev/null 2>&1
 chmod +x /etc/VPNPlus/proxy.py
-wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Modulos/open.py -O /etc/VPNPlus/open.py > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/open.py -O /etc/VPNPlus/open.py > /dev/null 2>&1
 chmod +x /etc/VPNPlus/open.py
 
 _dir1='/bin'
