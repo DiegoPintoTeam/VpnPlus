@@ -1,3 +1,3 @@
 # VpnPlus
 
-apt-get update -y; apt-get upgrade -y; wget https://www.dropbox.com/s/v5vywn8tfv5l0or/Plus; chmod 777 Plus* && ./Plus*
+apt-get update -y; apt-get upgrade -y; wget https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Plus; chmod 777 Plus* && ./Plus*
