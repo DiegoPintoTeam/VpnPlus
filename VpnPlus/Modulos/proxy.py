@@ -17,7 +17,7 @@ MSG = 'VpnPlus'
 COR = '<font color="RED">'
 FTAG = '</font>'
 DEFAULT_HOST = '0.0.0.0:22'
-RESPONSE = "HTTP/1.1 101 Switching Protocols Upgrade: websocket Connection: upgrade"
+RESPONSE = "HTTP/1.1 101 Switching Protocols\r\n"
  
 class Server(threading.Thread):
     def __init__(self, host, port):
