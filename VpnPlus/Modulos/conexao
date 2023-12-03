@@ -301,20 +301,20 @@ clear
 	}
 
 	fun_drop() {
-		if netstat -nltp | grep 'dropbear' 1>/dev/null 2>/dev/null; then
+		if netstat -nltp | grep 'python' 1>/dev/null 2>/dev/null; then
 			clear
-			[[ $(netstat -nltp | grep -c 'dropbear') != '0' ]] && dpbr=$(netstat -nplt | grep 'dropbear' | awk -F ":" {'print $4'} | xargs) || sqdp="\033[1;31mINDISPONIBLE"
+			[[ $(netstat -nltp | grep -c 'python') != '0' ]] && dpbr=$(netstat -nplt | grep 'python' | awk -F ":" {'print $4'} | xargs) || sqdp="\033[1;31mINDISPONIBLE"
 			if ps x | grep "limiter" | grep -v grep 1>/dev/null 2>/dev/null; then
 				stats='\033[1;31m◉ '
 			else
 				stats='\033[1;31m○ '
 			fi
-			echo -e "\E[44;1;37m                CONFIGURAR DROPBEAR               \E[0m"
+			echo -e "\E[44;1;37m                CONFIGURAR PYTHON               \E[0m"
 			echo -e "\n\033[1;32mPUERTOS\033[1;32m: \033[1;31m$dpbr"
 			echo ""
-			echo -e "\033[1;31m[\033[1;32m1\033[1;31m] \033[1;32m• \033[1;32mLIMITE DROPBEAR $stats\033[0m"
-			echo -e "\033[1;31m[\033[1;32m2\033[1;31m] \033[1;32m• \033[1;32mCAMBIAR PUERTO DROPBEAR\033[0m"
-			echo -e "\033[1;31m[\033[1;32m3\033[1;31m] \033[1;32m• \033[1;32mREMOVER DROPBEAR\033[0m"
+			echo -e "\033[1;31m[\033[1;32m1\033[1;31m] \033[1;32m• \033[1;32mLIMITE PYTHON $stats\033[0m"
+			echo -e "\033[1;31m[\033[1;32m2\033[1;31m] \033[1;32m• \033[1;32mCAMBIAR PUERTO PYTHON\033[0m"
+			echo -e "\033[1;31m[\033[1;32m3\033[1;31m] \033[1;32m• \033[1;32mREMOVER PYTHON\033[0m"
 			echo -e "\033[1;31m[\033[1;32m0\033[1;31m] \033[1;32m• \033[1;32mVOLVER\033[0m"
 			echo ""
 			echo -ne "\033[1;31mOPCION \033[1;31m?\033[1;32m: ";
@@ -347,31 +347,31 @@ clear
 				read pt
 				echo ""
 				verif_ptrs $pt
-				var1=$(grep 'DROPBEAR_PORT=' /etc/default/dropbear | cut -d'=' -f2)
-				echo -e "\033[1;32mCAMBIANDO PUERTO DROPBEAR!"
-				sed -i "s/\b$var1\b/$pt/g" /etc/default/dropbear >/dev/null 2>&1
+				var1=$(grep 'PYTHON_PORT=' /etc/default/python | cut -d'=' -f2)
+				echo -e "\033[1;32mCAMBIANDO PUERTO PYTHON!"
+				sed -i "s/\b$var1\b/$pt/g" /etc/default/python >/dev/null 2>&1
 				echo ""
 				fun_bar 'sleep 2'
-				echo -e "\n\033[1;32mREINICIANDO DROPBEAR..."
+				echo -e "\n\033[1;32mREINICIANDO PYTHON..."
 				echo ""
-				fun_bar 'service dropbear restart' '/etc/init.d/dropbear restart'
+				fun_bar 'service python restart' '/etc/init.d/python restart'
 				echo -e "\n\033[1;32mPUERTO CAMBIADO CON EXITO!"
 				sleep 3
 				clear
 				fun_conexao
 			elif [[ "$resposta" = '3' ]]; then
-				echo -e "\n\033[1;32mREMOVIENDO DROPBEAR!\033[0m"
+				echo -e "\n\033[1;32mREMOVIENDO PYTHON!\033[0m"
 				echo ""
 				fun_dropunistall() {
-					service dropbear stop && /etc/init.d/dropbear stop
-					apt-get autoremove dropbear -y
-					apt-get remove dropbear-run -y
-					apt-get remove dropbear -y
-					apt-get purge dropbear -y
-					rm -rf /etc/default/dropbear
+					service python stop && /etc/init.d/python stop
+					apt-get autoremove python -y
+					apt-get remove python-run -y
+					apt-get remove python -y
+					apt-get purge python -y
+					rm -rf /etc/default/python
 				}
 				fun_bar 'fun_dropunistall'
-				echo -e "\n\033[1;32mDROPBEAR REMOVIDO CON EXITO!\033[0m"
+				echo -e "\n\033[1;32mPYTHON REMOVIDO CON EXITO!\033[0m"
 				sleep 3
 				clear
 				fun_conexao
@@ -386,12 +386,12 @@ clear
 			fi
 		else
 			clear
-			echo -e "\E[44;1;37m                 INSTALAR DROPBEAR                \E[0m"
-			echo -e "\n\033[1;32mESTAS A PUNTO DE INSTALAR DROPBEAR!\033[0m\n"
+			echo -e "\E[44;1;37m                 INSTALAR PYTHON                \E[0m"
+			echo -e "\n\033[1;32mESTAS A PUNTO DE INSTALAR PYTHON!\033[0m\n"
 			echo -ne "\033[1;32mDESEA CONTINUAR [s/n]: ";
 			read resposta
 			[[ "$resposta" = 's' ]] && {
-				echo -e "\n\033[1;32mCONFIGURAR PUERTO PARA DROPBEAR!\033[0m\n"
+				echo -e "\n\033[1;32mCONFIGURAR PUERTO PARA PYTHON!\033[0m\n"
 				echo -ne "\033[1;32mPUERTO: ";
 				read porta
 				[[ ${porta} != ?(+|-)+([0-9]) ]] && {
@@ -401,20 +401,20 @@ clear
 					fun_conexao
 				}
 				verif_ptrs $porta
-				echo -e "\n\033[1;32mINSTALANDO DROPBEAR...\033[0m"
+				echo -e "\n\033[1;32mINSTALANDO PYTHON...\033[0m"
 				echo ""
 				fun_instdrop() {
 					apt-get update -y
-					apt-get install dropbear -y
+					apt-get install python -y
 				}
 				fun_bar 'fun_instdrop'
 				fun_ports() {
-					sed -i 's/NO_START=1/NO_START=0/g' /etc/default/dropbear >/dev/null 2>&1
-					sed -i "s/DROPBEAR_PORT=22/DROPBEAR_PORT=$porta/g" /etc/default/dropbear >/dev/null 2>&1
-					sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 110"/g' /etc/default/dropbear >/dev/null 2>&1
+					sed -i 's/NO_START=1/NO_START=0/g' /etc/default/python >/dev/null 2>&1
+					sed -i "s/PYTHON_PORT=22/PYTHON_PORT=$porta/g" /etc/default/python >/dev/null 2>&1
+					sed -i 's/PYTHON_EXTRA_ARGS=/PYTHON_EXTRA_ARGS="-p 110"/g' /etc/default/python >/dev/null 2>&1
 				}
 				echo ""
-				echo -e "\033[1;32mCONFIGURANDO PUERTO DROPBEAR...\033[0m"
+				echo -e "\033[1;32mCONFIGURANDO PUERTO PYTHON...\033[0m"
 				echo ""
 				fun_bar 'fun_ports'
 				grep -v "^PasswordAuthentication yes" /etc/ssh/sshd_config >/tmp/passlogin && mv /tmp/passlogin /etc/ssh/sshd_config
@@ -425,8 +425,8 @@ clear
 				echo -e "\033[1;32mFINALIZANDO INSTALACION!\033[0m"
 				echo ""
 				fun_ondrop() {
-					service dropbear start
-					/etc/init.d/dropbear restart
+					service python start
+					/etc/init.d/python restart
 				}
 				fun_bar 'fun_ondrop' 'sleep 1'
 				echo -e "\n\033[1;32mINSTALACION TERMINADA \033[1;32mPUERTO: \033[1;31m$porta\033[0m"
@@ -1681,8 +1681,8 @@ exit 0' >$RCLOCAL
 			} || {
 				sts3="\033[1;31m○ "
 			}
-			[[ "$(netstat -tlpn | grep 'dropbear' | wc -l)" != '0' ]] && {
-				echo -e "\033[1;31mSERVICIO: \033[1;32mDROPBEAR \033[1;32mPUERTO: \033[1;31m$(netstat -nplt | grep 'dropbear' | awk -F ":" {'print $4'} | xargs)"
+			[[ "$(netstat -tlpn | grep 'python' | wc -l)" != '0' ]] && {
+				echo -e "\033[1;31mSERVICIO: \033[1;32mPYTHON \033[1;32mPUERTO: \033[1;31m$(netstat -nplt | grep 'python' | awk -F ":" {'print $4'} | xargs)"
 				sts2="\033[1;31m◉ "
 			} || {
 				sts2="\033[1;31m○ "
@@ -1697,7 +1697,7 @@ exit 0' >$RCLOCAL
 			echo ""
 			echo -e "\033[1;31m[\033[1;32m01\033[1;31m] \033[1;32m• \033[1;32mOPENSSH $sts6\033[1;31m
 [\033[1;32m02\033[1;31m] \033[1;32m• \033[1;32mSQUID PROXY $sts1\033[1;31m
-[\033[1;32m03\033[1;31m] \033[1;32m• \033[1;32mDROPBEAR $sts2\033[1;31m
+[\033[1;32m03\033[1;31m] \033[1;32m• \033[1;32mPYTHON $sts2\033[1;31m
 [\033[1;32m04\033[1;31m] \033[1;32m• \033[1;32mOpenVPN $sts5\033[1;31m
 [\033[1;32m05\033[1;31m] \033[1;32m• \033[1;32mPROXY SOCKS $sts4\033[1;31m
 [\033[1;32m06\033[1;31m] \033[1;32m• \033[1;32mSSL TUNNEL $sts3\033[1;31m
