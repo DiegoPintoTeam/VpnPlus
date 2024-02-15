@@ -14,8 +14,9 @@ PASS = ''
 BUFLEN = 8196 * 8
 TIMEOUT = 60
 MSG = 'VpnPlus'
-DEFAULT_HOST = '0.0.0.0:1194'
-RESPONSE = "HTTP/1.1 101 " + str(MSG) + "\r\n\r\n"
+DEFAULT_HOST = '0.0.0.0:22'
+RESPONSE = "HTTP/1.1 101 Switching Protocol\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: foo\r\n\r\n " + str(MSG) + "\r\n\r\n"
+
 class Server(threading.Thread):
     def __init__(self, host, port):
         threading.Thread.__init__(self)
@@ -238,3 +239,4 @@ def main(host=IP, port=PORT):
             break
 if __name__ == '__main__':
     main()
+
