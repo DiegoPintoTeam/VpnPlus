@@ -1,6 +1,6 @@
 #! /bin/sh
 #-----------------------------
-# squid	open source 𝗗𝗶𝗲𝗴𝗼 𝗣𝗶𝗻𝘁𝗼.
+# squid	open source by Diego Pinto (Team).
 #-----------------------------
 
 NAME=squid3
@@ -179,31 +179,3 @@ case "$1" in
 esac
 
 exit 0
-3
-	else
-		log_daemon_msg "Starting $DESC" "$NAME"
-		if start ; then
-			log_end_msg $?
-		else
-			log_end_msg $?
-		fi
-	fi
-	;;
-    stop)
-	log_daemon_msg "Stopping $DESC" "$NAME"
-	if stop ; then
-		log_end_msg $?
-	else
-		log_end_msg $?
-	fi
-	;;
-    reload|force-reload)
-	res=`$DAEMON -k parse -f $CONFIG 2>&1 | grep -o "FATAL: .*"`
-	if test -n "$res";
-	then
-		log_failure_msg "$res"
-		exit 3
-	else
-		log_action_msg "Reloading $DESC configuration files"
-	  	start-stop-daemon --stop --signal 1 \
-			--pidfile $PIDFILE --q
