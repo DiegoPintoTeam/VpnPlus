@@ -606,7 +606,7 @@ clear
 			exit 5
 		fi
 		newclient() {
-			# gerar client.ovpn
+			#gerar client.ovpn
 			cp /etc/openvpn/client-common.txt ~/$1.ovpn
 			echo "<ca>" >>~/$1.ovpn
 			cat /etc/openvpn/easy-rsa/pki/ca.crt >>~/$1.ovpn
@@ -985,7 +985,7 @@ clear
 			clear
 			echo -e "\E[44;1;37m                 INSTALAR OpenVPN                 \E[0m"
 			echo ""
-			# OpenVPN instalador y creación del primer usuario
+			#OpenVPN instalador y creación del primer usuario
 			echo -e "\033[1;32mRESPONDA LAS PREGUNTAS PARA INICIAR LA INSTALACION"
 			echo ""
 			echo -ne "\033[1;32mPARA CONTINUAR CONFIRME SU IP: ";
@@ -1053,10 +1053,13 @@ clear
 			[[ -d /etc/openvpn/easy-rsa/ ]] && {
 				rm -rf /etc/openvpn/easy-rsa/
 			}
-			# Adquirindo easy-rsa
+			#Adquirindo easy-rsa
 			echo ""
 			fun_dep() {
 				wget -O ~/EasyRSA-3.0.1.tgz "https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Install/EasyRSA-3.0.1.tgz"
+				[[ ! -e $HOME/EasyRSA-3.0.1.tgz ]] && {
+					wget -O ~/EasyRSA-3.0.1.tgz "https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/Install/EasyRSA-3.0.1.tgz"
+				}
 				tar xzf ~/EasyRSA-3.0.1.tgz -C ~/
 				mv ~/EasyRSA-3.0.1/ /etc/openvpn/
 				mv /etc/openvpn/EasyRSA-3.0.1/ /etc/openvpn/easy-rsa/
@@ -1072,7 +1075,7 @@ clear
 				cp pki/ca.crt pki/private/ca.key pki/dh.pem pki/issued/server.crt pki/private/server.key /etc/openvpn/easy-rsa/pki/crl.pem /etc/openvpn
 				chown nobody:$GROUPNAME /etc/openvpn/crl.pem
 				openvpn --genkey --secret /etc/openvpn/ta.key
-				# Generando server.conf
+				#Generando server.conf
 				echo "port $porta
 proto $PROTOCOL
 dev tun
@@ -1087,10 +1090,10 @@ topology subnet
 server 10.8.0.0 255.255.255.0
 ifconfig-pool-persist ipp.txt" >/etc/openvpn/server.conf
 				echo 'push "redirect-gateway def1 bypass-dhcp"' >>/etc/openvpn/server.conf
-				# DNS
+				#DNS
 				case $DNS in
 				1)
-					# Obtain the resolvers from resolv.conf and use them for OpenVPN
+					#Obtain the resolvers from resolv.conf and use them for OpenVPN
 					grep -v '#' /etc/resolv.conf | grep 'nameserver' | grep -E -o '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | while read line; do
 						echo "push \"dhcp-option DNS $line\"" >>/etc/openvpn/server.conf
 					done
@@ -1203,7 +1206,7 @@ exit 0' >$RCLOCAL
 				IP="$IP2"
 			fi
 			cat <<-EOF >/etc/openvpn/client-common.txt
-				# OVPN_ACCESS_SERVER_PROFILE=[VpnPlus]
+				#OVPN_ACCESS_SERVER_PROFILE=[VpnPlus]
 				client
 				dev tun
 				proto $PROTOCOL
@@ -1227,7 +1230,7 @@ exit 0' >$RCLOCAL
 				keepalive 10 120
 				float
 			EOF
-			# gerar client.ovpn
+			#gerar client.ovpn
 			newclient "VpnPlus"
 			[[ "$(netstat -nplt | grep -wc 'openvpn')" != '0' ]] && echo -e "\n\033[1;32mOpenVPN INSTALADO CON EXITO\033[0m" || echo -e "\n\033[1;31mERROR INSTALACION CORRUPTA\033[0m"
 		}
