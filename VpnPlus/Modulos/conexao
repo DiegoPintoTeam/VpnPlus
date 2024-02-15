@@ -646,12 +646,12 @@ clear
 				else
 					mult=$(echo -e "\033[1;31m○ ")
 				fi
-				echo -e "\E[44;1;37m                CONFIGURAR OpenVPN                \E[0m"
+				echo -e "\E[44;1;37m                CONFIGURAR OPENVPN                \E[0m"
 				echo ""
 				echo -e "\033[1;32mPUERTO\033[1;32m: \033[1;31m$opnp"
 				echo ""
 				echo -e "\033[1;31m[\033[1;32m1\033[1;31m] \033[1;32m• \033[1;32mCAMBIAR PUERTO"
-				echo -e "\033[1;31m[\033[1;32m2\033[1;31m] \033[1;32m• \033[1;32mREMOVER OpenVPN"
+				echo -e "\033[1;31m[\033[1;32m2\033[1;31m] \033[1;32m• \033[1;32mREMOVER OPENVPN"
 				echo -e "\033[1;31m[\033[1;32m3\033[1;31m] \033[1;32m• \033[1;32mOVPN VIA LINK $ovpnweb"
 				echo -e "\033[1;31m[\033[1;32m4\033[1;31m] \033[1;32m• \033[1;32mMULTILOGIN OVPN $mult"
 				echo -e "\033[1;31m[\033[1;32m5\033[1;31m] \033[1;32m• \033[1;32mCAMBIAR HOST DNS"
@@ -662,7 +662,7 @@ clear
 				case $option in
 				1)
 					clear
-					echo -e "\E[44;1;37m             CAMBIAR PUERTO OpenVPN               \E[0m"
+					echo -e "\E[44;1;37m             CAMBIAR PUERTO OPENVPN               \E[0m"
 					echo ""
 					echo -e "\033[1;32mPUERTO EN USO: \033[1;31m$opnp"
 					echo ""
@@ -676,7 +676,7 @@ clear
 					}
 					verif_ptrs
 					echo ""
-					echo -e "\033[1;32mCAMBIANDO PUERTO OpenVPN!\033[1;32m"
+					echo -e "\033[1;32mCAMBIANDO PUERTO OPENVPN!\033[1;32m"
 					echo ""
 					fun_opn() {
 						var_ptovpn=$(sed -n '1 p' /etc/openvpn/server.conf)
@@ -695,7 +695,7 @@ clear
 					;;
 				2)
 					echo ""
-					echo -ne "\033[1;32mDESEA REMOVER OpenVPN [s/n]: "
+					echo -ne "\033[1;32mDESEA REMOVER OPENVPN [s/n]: "
 					read REMOVE
 					[[ "$REMOVE" = 's' ]] && {
 						rmv_open() {
@@ -736,11 +736,11 @@ clear
 							rm -rf /usr/share/doc/openvpn*
 						}
 						echo ""
-						echo -e "\033[1;32mREMOVIENDO OpenVPN!\033[0m"
+						echo -e "\033[1;32mREMOVIENDO OPENVPN!\033[0m"
 						echo ""
 						fun_bar 'rmv_open'
 						echo ""
-						echo -e "\033[1;32mOpenVPN REMOVIDO CON EXITO!\033[0m"
+						echo -e "\033[1;32mOPENVPN REMOVIDO CON EXITO!\033[0m"
 						sleep 2
 						fun_conexao
 					} || {
@@ -983,9 +983,9 @@ clear
 			done
 		} || {
 			clear
-			echo -e "\E[44;1;37m                 INSTALAR OpenVPN                 \E[0m"
+			echo -e "\E[44;1;37m                 INSTALAR OPENVPN                 \E[0m"
 			echo ""
-			#OpenVPN instalador y creación del primer usuario
+			#OPENVPN instalador y creación del primer usuario
 			echo -e "\033[1;32mRESPONDA LAS PREGUNTAS PARA INICIAR LA INSTALACION"
 			echo ""
 			echo -ne "\033[1;32mPARA CONTINUAR CONFIRME SU IP: ";
@@ -1021,7 +1021,7 @@ clear
 			echo -e "\033[1;31m[\033[1;32m1\033[1;31m] \033[1;32mUDP"
 			echo -e "\033[1;31m[\033[1;32m2\033[1;31m] \033[1;32mTCP (\033[1;32mRecomendado\033[1;32m)"
 			echo ""
-			read -p "$(echo -e "\033[1;32mCUAL PROTOCOLO DESEA USAR EN OpenVPN: ")" -e -i 2 resp
+			read -p "$(echo -e "\033[1;32mCUAL PROTOCOLO DESEA USAR EN OPENVPN: ")" -e -i 2 resp
 			if [[ "$resp" = '1' ]]; then
 				PROTOCOL=udp
 			elif [[ "$resp" = '2' ]]; then
@@ -1093,7 +1093,7 @@ ifconfig-pool-persist ipp.txt" >/etc/openvpn/server.conf
 				#DNS
 				case $DNS in
 				1)
-					#Obtain the resolvers from resolv.conf and use them for OpenVPN
+					#Obtain the resolvers from resolv.conf and use them for OPENVPN
 					grep -v '#' /etc/resolv.conf | grep 'nameserver' | grep -E -o '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | while read line; do
 						echo "push \"dhcp-option DNS $line\"" >>/etc/openvpn/server.conf
 					done
@@ -1177,7 +1177,7 @@ exit 0' >$RCLOCAL
 					fi
 				fi
 			}
-			echo -e "\033[1;32mINSTALANDO OpenVPN  \033[1;31m(\033[1;33mPUEDE DEMORAR!\033[1;31m)"
+			echo -e "\033[1;32mINSTALANDO OPENVPN  \033[1;31m(\033[1;33mPUEDE DEMORAR!\033[1;31m)"
 			echo ""
 			fun_bar 'fun_dep > /dev/null 2>&1'
 			fun_ropen() {
@@ -1198,7 +1198,7 @@ exit 0' >$RCLOCAL
 				}
 			}
 			echo ""
-			echo -e "\033[1;32mREINICIANDO OpenVPN"
+			echo -e "\033[1;32mREINICIANDO OPENVPN"
 			echo ""
 			fun_bar 'fun_ropen'
 			IP2=$(wget -4qO- "http://whatismyip.akamai.com/")
@@ -1232,7 +1232,7 @@ exit 0' >$RCLOCAL
 			EOF
 			#gerar client.ovpn
 			newclient "VpnPlus"
-			[[ "$(netstat -nplt | grep -wc 'openvpn')" != '0' ]] && echo -e "\n\033[1;32mOpenVPN INSTALADO CON EXITO\033[0m" || echo -e "\n\033[1;31mERROR INSTALACION CORRUPTA\033[0m"
+			[[ "$(netstat -nplt | grep -wc 'openvpn')" != '0' ]] && echo -e "\n\033[1;32mOPENVPN INSTALADO CON EXITO\033[0m" || echo -e "\n\033[1;31mERROR INSTALACION CORRUPTA\033[0m"
 		}
 		sed -i '$ i\echo 1 > /proc/sys/net/ipv4/ip_forward' /etc/rc.local
 		sed -i '$ i\echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6' /etc/rc.local
@@ -1666,7 +1666,7 @@ exit 0' >$RCLOCAL
 			}
 
 			[[ "$(netstat -tlpn | grep 'openvpn' | wc -l)" != '0' ]] && {
-				echo -e "\033[1;31mSERVICIO: \033[1;32mOpenVPN: \033[1;32mPUERTO: \033[1;31m$(netstat -nplt | grep 'openvpn' | awk {'print $4'} | cut -d: -f2 | xargs)"
+				echo -e "\033[1;31mSERVICIO: \033[1;32mOPENVPN: \033[1;32mPUERTO: \033[1;31m$(netstat -nplt | grep 'openvpn' | awk {'print $4'} | cut -d: -f2 | xargs)"
 				sts5="\033[1;31m◉ "
 			} || {
 				sts5="\033[1;31m○ "
@@ -1701,7 +1701,7 @@ exit 0' >$RCLOCAL
 			echo -e "\033[1;31m[\033[1;32m01\033[1;31m] \033[1;32m• \033[1;32mOPENSSH $sts6\033[1;31m
 [\033[1;32m02\033[1;31m] \033[1;32m• \033[1;32mSQUID PROXY $sts1\033[1;31m
 [\033[1;32m03\033[1;31m] \033[1;32m• \033[1;32mDROPBEAR $sts2\033[1;31m
-[\033[1;32m04\033[1;31m] \033[1;32m• \033[1;32mOpenVPN $sts5\033[1;31m
+[\033[1;32m04\033[1;31m] \033[1;32m• \033[1;32mOPENVPN $sts5\033[1;31m
 [\033[1;32m05\033[1;31m] \033[1;32m• \033[1;32mPROXY SOCKS $sts4\033[1;31m
 [\033[1;32m06\033[1;31m] \033[1;32m• \033[1;32mSSL TUNNEL $sts3\033[1;31m
 [\033[1;32m07\033[1;31m] \033[1;32m• \033[1;32mSSLH MULTIPUERTO $sts7\033[1;31m 

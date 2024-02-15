@@ -41,7 +41,7 @@ echo ""
 sleep .1s
 fi
 if [[ -e /etc/openvpn/server.conf ]]; then
-echo -ne "\033[1;32mREINICIANDO OpenVPN...\033[0m"; fun_prog 'service openvpn restart'
+echo -ne "\033[1;32mREINICIANDO OPENVPN...\033[0m"; fun_prog 'service openvpn restart'
 echo ""
 sleep .1s
 fi
