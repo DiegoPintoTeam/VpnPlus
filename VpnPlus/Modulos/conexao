@@ -151,7 +151,7 @@ clear
 			EOF
 			for Pts in $(echo -e $portass); do
 				echo -e "http_port $Pts" >>$var_sqd
-				[[ -f "/usr/sbin/ufw" ]] && sudo ufw allow $Pts/tcp
+				[[ -f "/usr/sbin/ufw" ]] && ufw allow $Pts/tcp
 			done
 			cat <<-EOF >>$var_sqd
 				#Nome squid

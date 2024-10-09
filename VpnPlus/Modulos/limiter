@@ -4,8 +4,8 @@ clear
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 #	SCRIPT: LIMITE VpnPlus
 #	DESARROLLADO POR:	Diego Pinto
-#	CONTACTO TELEGRAM:	https://t.me/By_mi_telegram
-#	CANAL TELEGRAM:	https://t.me/By_mi_telegram
+#	CONTACTO TELEGRAM:	https://t.me/DiegoPintoTM
+#	CANAL TELEGRAM:	https://t.me/DiegoPintoTM
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 clear
 database="/root/usuarios.db"

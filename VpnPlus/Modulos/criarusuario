@@ -2,8 +2,8 @@
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 #	SCRIPT: CRIARUSUARIO VpnPlus
 #	DESARROLLADO POR:	Diego Pinto
-#	CONTACTO TELEGRAM:	https://t.me/By_mi_telegram
-#	CANAL TELEGRAM:	https://t.me/By_mi_telegram
+#	CONTACTO TELEGRAM:	https://t.me/DiegoPintoTM
+#	CANAL TELEGRAM:	https://t.me/DiegoPintoTM
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 IP=$(cat /etc/IP)
 cor1='\033[44;1;37m'

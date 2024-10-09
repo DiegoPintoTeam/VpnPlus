@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # encoding: utf-8
-# VpnPlus By @By_mi_telegram
+# VpnPlus By @DiegoPintoTM
 import socket, threading, thread, select, signal, sys, time
 from os import system
 system("clear")

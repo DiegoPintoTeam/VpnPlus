@@ -102,7 +102,7 @@ vrs2=$(sed -n '1 p' /tmp/att | sed -e 's/[^0-9]//ig')
 
   rm /tmp/att > /dev/null 2>&1
 
-  echo -e " \033[1;32mMas información \033[1;31m(\033[1;32mTelegram\033[1;31m): \033[1;32m@By_mi_telegram\n"
+  echo -e " \033[1;32mMas información \033[1;31m(\033[1;32mTelegram\033[1;31m): \033[1;32m@DiegoPintoTM\n"
 
   echo -ne " \033[1;31m ENTER \033[1;32mpara volver al \033[1;32mMENU!\033[0m"; read
 
@@ -112,7 +112,7 @@ vrs2=$(sed -n '1 p' /tmp/att | sed -e 's/[^0-9]//ig')
 
   echo -e "  \033[1;32mExiste una nueva actualización!\033[1;32m\n"
 
-  echo -e "  \033[1;32mMas informacion \033[1;31m(\033[1;32mTELEGRAM\033[1;31m): \033[1;32m@By_mi_telegram\n"
+  echo -e "  \033[1;32mMas informacion \033[1;31m(\033[1;32mTELEGRAM\033[1;31m): \033[1;32m@DiegoPintoTM\n"
 
   echo -e "  \033[1;32mDetalles de la actualización:\033[0m\n"
 
