@@ -4,9 +4,9 @@ clear
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 #	SCRIPT: CONEXION <<< VpnPlus >>>
 #   DATA ATT:   15 de Jul 2020
-#	DESARROLLADO POR:	DIEGO PINTO
-#	CONTACTO TELEGRAM:	https://t.me/By_mi_telegram
-#	CANAL TELEGRAM:	https://t.me/By_mi_telegram
+#	DESARROLLADO POR:	Diego Pinto (Team)
+#	CONTACTO TELEGRAM:	https://t.me/DiegoPintoTM
+#	CANAL TELEGRAM:	https://t.me/DiegoPintoTM
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 _lvk=$(wget -qO- https://github.com/DiegoPintoTeam/VpnPlus/blob/main/VpnPlus/versao)
 IP=$(wget -qO- ipv4.icanhazip.com)
