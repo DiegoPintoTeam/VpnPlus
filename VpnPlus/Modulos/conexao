@@ -4,8 +4,8 @@ clear
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 #	SCRIPT: CONEXION VpnPlus
 #	DESARROLLADO POR: Diego Pinto
-#	CONTACTO TELEGRAM:	https://t.me/By_mi_telegram
-#	CANAL TELEGRAM:	https://t.me/By_mi_telegram
+#	CONTACTO TELEGRAM:	https://t.me/DiegoPintoTM
+#	CANAL TELEGRAM:	https://t.me/DiegoPintoTM
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 [[ $(awk -F" " '{print $2}' /usr/lib/licence) == "@diego_pinto" ]] && {
 	ram1=$(free -h | grep -i mem | awk {'print $2'})
