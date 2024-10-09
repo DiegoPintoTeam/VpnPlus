@@ -141,6 +141,6 @@ cd $HOME
 echo -e "            \033[1;32m • \033[1;32mINSTALACION TERMINADA\033[1;32m • \033[0m"
 echo ""
 echo -e "\033[1;32m\033[1;32mCOMANDO PRINCIPAL: \033[1;31mmenu\033[0m"
-echo -e "\033[1;32mMAS INFORMACIONES \033[1;31m(\033[1;32mTELEGRAM\033[1;31m): \033[1;32m@By_mi_telegram\033[0m"
+echo -e "\033[1;32mMAS INFORMACIONES \033[1;31m(\033[1;32mTELEGRAM\033[1;31m): \033[1;32m@DiegoPintoTM\033[0m"
 rm -rf $HOME/Plus && cat /dev/null > ~/.bash_history && history -c
 }
