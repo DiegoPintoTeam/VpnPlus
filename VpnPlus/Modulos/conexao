@@ -1647,7 +1647,6 @@ exit 0' >$RCLOCAL
 				sleep 2
 				fun_conexao
 			}
-		fi
 	}
 	fun_v2rayins() {
 		clear
@@ -1677,7 +1676,6 @@ exit 0' >$RCLOCAL
 				conexao
 			}
 			v2rayinst
-		fi
 	}
 
 	x="OK"
