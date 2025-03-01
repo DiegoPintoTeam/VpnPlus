@@ -449,7 +449,7 @@ fun_conexao
 	fun_v2rayins() {
 		clear
 		v2rayinst() {
-			source <(curl -sL https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/Modulos/v2ray)
+			source <(curl -sL https://raw.githubusercontent.com/DiegoPintoTeam/VPNPRO/main/Modulos/v2ray)
 			sleep 6
 		}
 		if netstat -tunlp | grep v2ray 1>/dev/null 2>/dev/null; then
@@ -476,7 +476,6 @@ fun_conexao
 			v2rayinst
 		fi
 	}
-
 	inst_ssl() {
 		if netstat -nltp | grep 'stunnel4' 1>/dev/null 2>/dev/null; then
 			[[ $(netstat -nltp | grep 'stunnel4' | wc -l) != '0' ]] && sslt=$(netstat -nplt | grep stunnel4 | awk {'print $4'} | awk -F ":" {'print $2'} | xargs) || sslt="\033[1;31mINDISPONIBLE"
