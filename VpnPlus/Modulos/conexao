@@ -1678,8 +1678,7 @@ exit 0' >$RCLOCAL
 			}
 			v2rayinst
 		fi
-	}
-		}
+
 	}
 
 	x="OK"
