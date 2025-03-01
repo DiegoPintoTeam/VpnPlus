@@ -21,7 +21,7 @@ dpkg-reconfigure --frontend noninteractive tzdata >/dev/null 2>&1
 [[ ! -d /etc/VPNPlus/senha ]] && mkdir /etc/VPNPlus/senha
 [[ ! -e /etc/VPNPlus/Exp ]] && touch /etc/VPNPlus/Exp
 [[ ! -d /etc/VPNPlus/userteste ]] && mkdir /etc/VPNPlus/userteste
-echo -e 'by: @diego_pinto' > /usr/lib/vpnplus && cat /usr/lib/vpnplus > /usr/lib/licence
+echo -e '@diego_pinto' > /usr/lib/vpnplus && cat /usr/lib/vpnplus > /usr/lib/licence
 netstat -nplt | grep -w 'apache2' | grep -w '80' && sed -i "s/Listen 80/Listen 81/g" /etc/apache2/ports.conf && service apache2 restart
 [[ "$(grep -o '#Port 22' /etc/ssh/sshd_config)" == "#Port 22" ]] && sed -i "s;#Port 22;Port 22;" /etc/ssh/sshd_config && service ssh restart
 grep -v "^PasswordAuthentication" /etc/ssh/sshd_config >/tmp/passlogin && mv /tmp/passlogin /etc/ssh/sshd_config
@@ -90,12 +90,10 @@ wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modul
 chmod +x /etc/VPNPlus/proxy.py
 wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/open.py -O /etc/VPNPlus/open.py > /dev/null 2>&1
 chmod +x /etc/VPNPlus/open.py
-wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/v2raymanager -O /etc/VPNPlus/v2raymanager > /dev/null 2>&1
-chmod +x /etc/VPNPlus/v2raymanager
 
 _dir1='/bin'
 _dir2='/etc/VPNPlus'
-_mdls=("addhost" "delhost" "alterarsenha" "criarusuario" "expcleaner" "mudardata" "remover" "bloquear" "droplimiter" "alterarlimite" "sshmonitor" "badvpn" "userbackup" "otimizar" "menu" "speedtest" "banner" "senharoot" "reiniciarservicos" "reiniciarsistema" "attscript" "conexao" "delscript" "detalhes" "infousers" "verifatt" "limiter" "uexpired" "cabecalho" "open.py" "proxy.py" "v2raymanager")
+_mdls=("addhost" "delhost" "alterarsenha" "criarusuario" "expcleaner" "mudardata" "remover" "bloquear" "droplimiter" "alterarlimite" "sshmonitor" "badvpn" "userbackup" "otimizar" "menu" "speedtest" "banner" "senharoot" "reiniciarservicos" "reiniciarsistema" "attscript" "conexao" "delscript" "detalhes" "infousers" "verifatt" "limiter" "uexpired" "cabecalho" "open.py" "proxy.py")
 _arq_host="/etc/hosts"
 _host[0]="cloudfront.net"
 _host[1]="dns.whatsapp.net"
