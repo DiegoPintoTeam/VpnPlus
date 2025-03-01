@@ -448,7 +448,7 @@ fun_conexao
 	fun_v2rayins() {
 		clear
 		v2rayinst() {
-			source <(curl -sL https://raw.githubusercontent.com/DiegoPintoTeam/VPNPRO/main/Modulos/v2ray)
+			source <(curl -sL https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/v2ray)
 			sleep 6
 		}
 		if netstat -tunlp | grep v2ray 1>/dev/null 2>/dev/null; then
