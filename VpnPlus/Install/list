@@ -17,6 +17,7 @@ echo -e "America/Bogota" >/etc/timezone
 ln -fs /usr/share/zoneinfo/America/Bogota /etc/localtime >/dev/null 2>&1
 dpkg-reconfigure --frontend noninteractive tzdata >/dev/null 2>&1
 [[ ! -d /etc/VPNPlus ]] && mkdir /etc/VPNPlus
+[[ ! -d /etc/VPNPlus/v2ray ]] && mkdir /etc/VPNPlus/v2ray
 [[ ! -d /etc/VPNPlus/senha ]] && mkdir /etc/VPNPlus/senha
 [[ ! -e /etc/VPNPlus/Exp ]] && touch /etc/VPNPlus/Exp
 [[ ! -d /etc/VPNPlus/userteste ]] && mkdir /etc/VPNPlus/userteste
