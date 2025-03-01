@@ -1775,7 +1775,6 @@ exit 0' >$RCLOCAL
 				;;
 			8 | 08)
 				v2raymanager
-				exit
 				;;
 		 0 | 0)
 				menu
