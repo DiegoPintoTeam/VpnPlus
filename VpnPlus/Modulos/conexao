@@ -1772,10 +1772,10 @@ exit 0' >$RCLOCAL
 				inst_ssl
 				;;
 			7 | 07)
-				v2raymanager
+				fun_sslh
 				;;
 			8 | 08)
-				fun_sslh
+				v2raymanager
 				;;
 		 0 | 0)
 				menu
