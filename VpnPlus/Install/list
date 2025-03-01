@@ -90,10 +90,12 @@ wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modul
 chmod +x /etc/VPNPlus/proxy.py
 wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/open.py -O /etc/VPNPlus/open.py > /dev/null 2>&1
 chmod +x /etc/VPNPlus/open.py
+wget https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/v2raymanager -O /etc/VPNPlus/v2raymanager > /dev/null 2>&1
+chmod +x /etc/VPNPlus/v2raymanager
 
 _dir1='/bin'
 _dir2='/etc/VPNPlus'
-_mdls=("addhost" "delhost" "alterarsenha" "criarusuario" "expcleaner" "mudardata" "remover" "bloquear" "droplimiter" "alterarlimite" "sshmonitor" "badvpn" "userbackup" "otimizar" "menu" "speedtest" "banner" "senharoot" "reiniciarservicos" "reiniciarsistema" "attscript" "conexao" "delscript" "detalhes" "infousers" "verifatt" "limiter" "uexpired" "cabecalho" "open.py" "proxy.py")
+_mdls=("addhost" "delhost" "alterarsenha" "criarusuario" "expcleaner" "mudardata" "remover" "bloquear" "droplimiter" "alterarlimite" "sshmonitor" "badvpn" "userbackup" "otimizar" "menu" "speedtest" "banner" "senharoot" "reiniciarservicos" "reiniciarsistema" "attscript" "conexao" "delscript" "detalhes" "infousers" "verifatt" "limiter" "uexpired" "cabecalho" "open.py" "proxy.py" "v2raymanager")
 _arq_host="/etc/hosts"
 _host[0]="cloudfront.net"
 _host[1]="dns.whatsapp.net"
