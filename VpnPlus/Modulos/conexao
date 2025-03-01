@@ -1676,7 +1676,6 @@ exit 0' >$RCLOCAL
 				conexao
 			}
 			v2rayinst
-	}
 
 	x="OK"
 	fun_conexao() {
