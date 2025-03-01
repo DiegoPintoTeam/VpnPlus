@@ -11,7 +11,7 @@ if [[ "$resp" = s || "$resp" = S ]];then
     apt-get purge squid3 -y > /dev/null 2>&1
     apt-get purge dropbear -y > /dev/null 2>&1
     apt-get purge apache2 -y > /dev/null 2>&1
-    rm /bin/criarusuario /bin/expcleaner /bin/sshlimiter /bin/addhost /bin/listar /bin/sshmonitor /bin/ajuda /bin/menu /bin/OPENVPN /bin/userbackup /bin/tcpspeed /bin/badvpn /bin/otimizar /bin/speedtest /bin/trafego /bin/banner /bin/limit /bin/limite /bin/senharoot /bin/reiniciarservicos /bin/reiniciarsistema /bin/attscript /bin/bloquear /bin/socks  /bin/DropBear /bin/alterarlimite /bin/alterarsenha /bin/remover /bin/detalhes /bin/mudardata /bin/infousers /bin/droplimiter /bin/conexao /bin/v2raymanager /bin/versao > /dev/null 2>&1
+    rm /bin/criarusuario /bin/expcleaner /bin/sshlimiter /bin/addhost /bin/listar /bin/sshmonitor /bin/ajuda /bin/menu /bin/OPENVPN /bin/userbackup /bin/tcpspeed /bin/badvpn /bin/otimizar /bin/speedtest /bin/trafego /bin/banner /bin/limit /bin/limite /bin/senharoot /bin/reiniciarservicos /bin/reiniciarsistema /bin/attscript /bin/bloquear /bin/socks  /bin/DropBear /bin/alterarlimite /bin/alterarsenha /bin/remover /bin/detalhes /bin/mudardata /bin/infousers /bin/droplimiter /bin/conexao /bin/versao > /dev/null 2>&1
     rm -rf /etc/VPNPlus > /dev/null 2>&1
     clear
     echo -e "\033[1;32mGracias por usar ༒︎ <<< VpnPlus >>> ༒︎\033[1;32m"
