@@ -442,8 +442,6 @@ clear
 				fun_conexao
 			}
 		fi
-fun_conexao
-			}
 	}
 	fun_v2rayins() {
 		clear
