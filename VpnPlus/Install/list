@@ -21,7 +21,7 @@ dpkg-reconfigure --frontend noninteractive tzdata >/dev/null 2>&1
 [[ ! -d /etc/VPNPlus/senha ]] && mkdir /etc/VPNPlus/senha
 [[ ! -e /etc/VPNPlus/Exp ]] && touch /etc/VPNPlus/Exp
 [[ ! -d /etc/VPNPlus/userteste ]] && mkdir /etc/VPNPlus/userteste
-echo -e '@diego_pinto' > /usr/lib/vpnplus && cat /usr/lib/vpnplus > /usr/lib/licence
+echo -e '@DiegoPintoTeam_SSH' > /usr/lib/vpnplus && cat /usr/lib/vpnplus > /usr/lib/licence
 netstat -nplt | grep -w 'apache2' | grep -w '80' && sed -i "s/Listen 80/Listen 81/g" /etc/apache2/ports.conf && service apache2 restart
 [[ "$(grep -o '#Port 22' /etc/ssh/sshd_config)" == "#Port 22" ]] && sed -i "s;#Port 22;Port 22;" /etc/ssh/sshd_config && service ssh restart
 grep -v "^PasswordAuthentication" /etc/ssh/sshd_config >/tmp/passlogin && mv /tmp/passlogin /etc/ssh/sshd_config
