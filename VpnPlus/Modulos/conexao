@@ -1788,4 +1788,6 @@ exit 0' >$RCLOCAL
 				;;
 			esac
 		done
+	}
+	fun_conexao
 }
