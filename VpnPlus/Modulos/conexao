@@ -1773,7 +1773,7 @@ exit 0' >$RCLOCAL
 				fun_sslh
 				;;
 			8 | 08)
-				fun_v2raymanager
+				v2raymanager
 				exit
 				;;
 		 0 | 0)
