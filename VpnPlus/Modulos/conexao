@@ -7,7 +7,7 @@ clear
 #	CONTACTO TELEGRAM:	https://t.me/DiegoPintoTM
 #	CANAL TELEGRAM:	https://t.me/DiegoPintoTM
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[[ $(awk -F" " '{print $2}' /usr/lib/licence) == "@diego_pinto" ]] && {
+[[ $(awk -F" " '{print $2}' /usr/lib/licence) == "@DiegoPintoTeam_SSH" ]] && {
 	ram1=$(free -h | grep -i mem | awk {'print $2'})
 	ram2=$(free -h | grep -i mem | awk {'print $4'})
 	ram3=$(free -h | grep -i mem | awk {'print $3'})
