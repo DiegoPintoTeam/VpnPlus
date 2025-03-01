@@ -442,39 +442,8 @@ clear
 				fun_conexao
 			}
 		fi
-fun_conexao
-			}
 	}
-	fun_v2rayins() {
-		clear
-		v2rayinst() {
-			source <(curl -sL https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/v2ray)
-			sleep 6
-		}
-		if netstat -tunlp | grep v2ray 1>/dev/null 2>/dev/null; then
-			echo -e "\E[44;1;37m            INSTALADOR V2RAY             \E[0m"
-			echo -e "\n${YELLOW}V2RAY JÁ ESTÁ INSTALADO\nDESEA REINSTALAR? ${SCOLOR}\n"
-			echo -ne "${GREEN}DESEA CONTINUAR A REINSTALAÇÃO ? ${YELLOW}[s/n]:${SCOLOR} "
-			read resp
-			[[ "$resp" != @(s|sim|S|SIM) ]] && {
-				echo -e "\n${RED}Volviendo...${SCOLOR}"
-				sleep 2
-				conexao
-			}
-			v2rayinst
-		else
-			echo -e "\E[44;1;37m            INSTALADOR V2RAY             \E[0m"
-			echo -e "\n${YELLOW}ESTEJA CIENTE QUE ESSE METODO É INSTAVEL\nFIQUE CIENTE DOS RISCOS ! ${SCOLOR}\n"
-			echo -ne "${GREEN}DESEA CONTINUAR A INSTALACAO ? ${YELLOW}[s/n]:${SCOLOR} "
-			read resp
-			[[ "$resp" != @(s|sim|S|SIM) ]] && {
-				echo -e "\n${RED}Volviendo...${SCOLOR}"
-				sleep 2
-				conexao
-			}
-			v2rayinst
-		fi
-	}
+
 	inst_ssl() {
 		if netstat -nltp | grep 'stunnel4' 1>/dev/null 2>/dev/null; then
 			[[ $(netstat -nltp | grep 'stunnel4' | wc -l) != '0' ]] && sslt=$(netstat -nplt | grep stunnel4 | awk {'print $4'} | awk -F ":" {'print $2'} | xargs) || sslt="\033[1;31mINDISPONIBLE"
@@ -1678,6 +1647,38 @@ exit 0' >$RCLOCAL
 				sleep 2
 				fun_conexao
 			}
+		fi
+	}
+	fun_v2rayins() {
+		clear
+		v2rayinst() {
+			source <(curl -sL https://raw.githubusercontent.com/DiegoPintoTeam/VpnPlus/main/VpnPlus/Modulos/v2ray)
+			sleep 6
+		}
+		if netstat -tunlp | grep v2ray 1>/dev/null 2>/dev/null; then
+			echo -e "\E[44;1;37m            INSTALADOR V2RAY             \E[0m"
+			echo -e "\n${YELLOW}V2RAY JÁ ESTÁ INSTALADO\nDESEA REINSTALAR? ${SCOLOR}\n"
+			echo -ne "${GREEN}DESEA CONTINUAR A REINSTALAÇÃO ? ${YELLOW}[s/n]:${SCOLOR} "
+			read resp
+			[[ "$resp" != @(s|sim|S|SIM) ]] && {
+				echo -e "\n${RED}Volviendo...${SCOLOR}"
+				sleep 2
+				conexao
+			}
+			v2rayinst
+		else
+			echo -e "\E[44;1;37m            INSTALADOR V2RAY             \E[0m"
+			echo -e "\n${YELLOW}ESTEJA CIENTE QUE ESSE METODO É INSTAVEL\nFIQUE CIENTE DOS RISCOS ! ${SCOLOR}\n"
+			echo -ne "${GREEN}DESEA CONTINUAR A INSTALACAO ? ${YELLOW}[s/n]:${SCOLOR} "
+			read resp
+			[[ "$resp" != @(s|sim|S|SIM) ]] && {
+				echo -e "\n${RED}Volviendo...${SCOLOR}"
+				sleep 2
+				conexao
+			}
+			v2rayinst
+		fi
+	}
 		}
 	}
 
@@ -1727,7 +1728,7 @@ exit 0' >$RCLOCAL
 			} || {
 				sts1="\033[1;31m○ "
 			}
-			[[ "$(netstat -tlpn | grep 'v2ray' | wc -l)" != '0' ]] && {
+			[[ "$(netstat -tunlp | grep 'v2ray' | wc -l)" != '0' ]] && {
 				xv2ray="\033[1;32m◉ "
 			} || {
 				xv2ray="\033[1;31m○ "
@@ -1740,8 +1741,8 @@ exit 0' >$RCLOCAL
 [\033[1;32m04\033[1;31m] \033[1;32m• \033[1;32mOPENVPN $sts5\033[1;31m
 [\033[1;32m05\033[1;31m] \033[1;32m• \033[1;32mPROXY SOCKS $sts4\033[1;31m
 [\033[1;32m06\033[1;31m] \033[1;32m• \033[1;32mSSL TUNNEL $sts3\033[1;31m
-[\033[1;32m07\033[1;31m] \033[1;32m• \033[1;32mSSLH MULTIPUERTO $sts7\033[1;31m 
-[\033[1;32m08\033[1;31m] \033[1;32m• \033[1;32mV2RAY $xv2ray\033[1;31m
+[\033[1;32m07\033[1;31m] \033[1;32m• \033[1;32mSSLH MULTIPUERTO $sts7\033[1;31m
+[\033[1;36m08\033[1;31m] \033[1;37m• \033[1;33mV2RAY $xv2ray\033[1;31m
 [\033[1;32m0\033[1;31m]  \033[1;32m• \033[1;32mVOLVER \033[1;31m
 [\033[1;32m00\033[1;31m] \033[1;32m• \033[1;32mSALIR \033[1;32m<\033[1;32m<\033[1;31m< \033[0m"
 			echo ""
@@ -1774,8 +1775,9 @@ exit 0' >$RCLOCAL
 			7 | 07)
 				fun_sslh
 				;;
-			8 | 08)
+	   	    8 | 08)
 				v2raymanager
+				exit
 				;;
 		 0 | 0)
 				menu
@@ -1792,6 +1794,7 @@ exit 0' >$RCLOCAL
 				;;
 			esac
 		done
-	}
-	fun_conexao
+}
+fun_conexao
+}
 }
