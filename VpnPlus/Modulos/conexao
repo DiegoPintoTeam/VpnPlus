@@ -1725,9 +1725,8 @@ exit 0' >$RCLOCAL
 			} || {
 				sts1="\033[1;31m○ "
 			}
-			[[ "$(netstat -tunlp | grep 'v2ray' | wc -l)" != '0' ]] && {
-			    echo -e "\033[1;31mSERVICIO: \033[1;32mV2ray \033[1;32mPUERTO: \033[1;31m$(netstat -nplt | grep 'v2ray' | awk -F ":" {'print $4'} | xargs)"
-				xv2ray="\033[1;32m◉ "
+			[[ "$(netstat -tlpn | grep 'v2ray' | wc -l)" != '0' ]] && {
+			    xv2ray="\033[1;32m◉ "
 			} || {
 				xv2ray="\033[1;31m○ "
 			}
@@ -1775,6 +1774,7 @@ exit 0' >$RCLOCAL
 				;;
 			8 | 08)
 				fun_v2raymanager
+				exit
 				;;
 		 0 | 0)
 				menu
@@ -1793,5 +1793,4 @@ exit 0' >$RCLOCAL
 		done
 	}
 	fun_conexao
-}
 }
